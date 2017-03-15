@@ -1,5 +1,7 @@
 require 'pry'
-  #
+
+  #Morning Exercise 3/15/17
+  #Instructions
   # The sum of the squares of the first ten natural numbers is,
   #
   # 1^2 + 2^2 + ... + 10^2 = 385
@@ -26,14 +28,15 @@ require 'pry'
   new_set = (1..100).to_a
 
   new_set_sum = new_set.reduce(:+)
-  #could have jumped straight to squre in one step
+  #Courtesy Chantal: could have jumped straight to squre in one step
   # new_set.reduce(:+)**2
+
 
   new_set_square = new_set_sum ** 2
 
   delta = new_set_square - base_set_sum
 
-#so possible less-readable refactor to delta = (((1..100).to_a).reduce(:+)**2)- ((((1..100).to_a).map!{|i| i**2}).reduce(:+))
+#so possible less-readable refactor to delta = (((1..100).to_a).reduce(:+)**2)- ((1..100).map{|i| i**2}.inject(:+))
 
 binding.pry
 '--'
