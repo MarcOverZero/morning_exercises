@@ -1,3 +1,4 @@
+require 'pry'
   #
   # The sum of the squares of the first ten natural numbers is,
   #
@@ -18,14 +19,21 @@
   base_set = (1..100).to_a
 
   base_set.map! { |i| i ** 2 }
-  end
+
 
   base_set_sum = base_set.reduce(:+)
 
   new_set = (1..100).to_a
 
   new_set_sum = new_set.reduce(:+)
+  #could have jumped straight to squre in one step
+  # new_set.reduce(:+)**2
 
   new_set_square = new_set_sum ** 2
 
   delta = new_set_square - base_set_sum
+
+#so possible less-readable refactor to delta = (((1..100).to_a).reduce(:+)**2)- ((((1..100).to_a).map!{|i| i**2}).reduce(:+))
+
+binding.pry
+'--'
