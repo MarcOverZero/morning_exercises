@@ -1,4 +1,5 @@
-#directions puts each of the first 25
+#Morning Exercise 3/16/17
+#Directions puts each of the first 25 fibonacci numbers
 
 class FibonacciFactory
   attr_accessor :seed
@@ -24,7 +25,7 @@ end
 FibonacciFactory.new
 
 # This one works ^^^
-# VV this one does not, it is also trying to declare if the number is prmeVV
+# VV this one does not, it is also trying to declare if the number is primeVV
 
 # class FibonacciFactory
 #   attr_accessor :seed
