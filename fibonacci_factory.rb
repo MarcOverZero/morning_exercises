@@ -25,7 +25,10 @@ end
 FibonacciFactory.new
 
 # This one works ^^^
+
 # VV this one does not, it is also trying to declare if the number is primeVV
+#use require 'prime' to get around it
+#could also start with numbers less than square root
 
 # class FibonacciFactory
 #   attr_accessor :seed
