@@ -5,8 +5,8 @@ require 'pry'
 # if divisible by 400 override as it as a leapyear
 class LeapYear
   attr_reader :range
-  def initialize
-    range = (2017..2042).to_a
+  def initialize(year)
+    range = (year..(year+25)).to_a
     @range = range
     leap_year?
   end
@@ -25,4 +25,4 @@ class LeapYear
   end
 end
 
-LeapYear.new
+LeapYear.new(2017)
