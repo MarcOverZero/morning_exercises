@@ -10,19 +10,7 @@ class LeapYear
     @range = range
     leap_year?
   end
-  def leap_year?
-    range.map do |year|
-      if year %4 == 0 && year %400 == 0
-        puts "#{year} leap!"
-      elsif year %4 == 0 && year %100 == 0
-        prints year
-      elsif year %4 == 0
-        puts "#{year} leap!"
-      else
-        puts year
-      end
-    end
-  end
+at
 end
 
 LeapYear.new(2017)
